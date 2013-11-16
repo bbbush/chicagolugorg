@@ -14,18 +14,21 @@
   
     {% endblock %}
   </title>
-  <meta name="description" content="{% block meta_description %}{% endblock %}">
-  <meta name="author" content="{% block meta_author %}{% endblock %}">
+  <meta name="description" content="Linux User Group of Chicago, Illinois." />
+  <meta name="keywords" content="Chicago,LUG,Linux,User Group,Free Software,
+  Open Source,Programming" />
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
   <meta name="viewport" content="width=device-width">
-
   {% assets "common_css" %}
     <link rel="stylesheet" href="{{ ASSET_URL }}">
   {% endassets %}
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Droid+Sans+Mono|Cantarell' rel='stylesheet' type='text/css'>
 
   {% block css %}{% endblock %}
 
+  <link href="https://plus.google.com/110920643277848720575" rel="publisher" />
+  <meta name="msvalidate.01" content="FA20DCFCAC4C21E483493F349265ABF4" />
 </head>
 <body class="{% block body_class %}{% endblock %}">
 {% block body %}
